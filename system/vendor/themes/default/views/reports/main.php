@@ -4,7 +4,7 @@
 		<div class="big-block">
 			<h1 class="heading">
 				<?php $timeframe_title = date('M d, Y', $oldest_timestamp).' '.Kohana::lang('ui_main.through').' '.date('M d, Y', $latest_timestamp); ?>
-				<?php echo Kohana::lang('ui_main.showing_reports_from'); ?> 
+				<?php echo Kohana::lang('ui_main.showing_reports_from'); ?>
 				<span class="time-period"><?php echo $timeframe_title; ?></span> 
 				<a href="#" class="btn-change-time ic-time"><?php echo Kohana::lang('ui_main.change_date_range'); ?></a>
 			</h1>

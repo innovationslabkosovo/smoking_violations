@@ -60,7 +60,7 @@
 							<th scope="row"><label for="select_language">Default Language (Locale)</label></th>
 							<td>
 								<select name="select_language">
-									<option value="en_US" selected="selected">English (US)</option>
+									<option value="en_US"  selected="selected">English (US)</option>
 									<option value="fr_FR">Français</option>
 								</select>
 							</td>

@@ -1096,6 +1096,7 @@ final class Kohana {
 				// Directory i18n key
 				$directory = 'core.'.inflector::singular($directory);
 
+
 				// If the file is required, throw an exception
 				throw new Kohana_Exception('core.resource_not_found', self::lang($directory), $filename);
 			}

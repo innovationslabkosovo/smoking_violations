@@ -376,11 +376,11 @@ class Reports_Controller extends Main_Controller {
 
 				if ($check_exist == 0){
 				
-					reports::save_report($post, $incident, $location->id);
+					reports::save_report($post, $incident, $location);
 				}
 				else
 				{
-					reports::save_report($post, $incident, $location_id1);
+					reports::save_report($post, $incident, $loc);
 				}
 				// STEP 2b: SAVE INCIDENT GEOMETRIES
 				reports::save_report_geometry($post, $incident);
@@ -679,7 +679,7 @@ class Reports_Controller extends Main_Controller {
 			$this->template->content->features_count = $incident->geometry->count();
 			$this->template->content->features = $incident->geometry;
 			$this->template->content->incident_id = $incident->id;
-			$this->template->content->incident_title = $incident_title;
+			$this->template->content->incident_title = substr_replace($incident_title, Kohana::lang('ui_main.violation_title'), 0, 0);
 			$this->template->content->incident_description = $incident_description;
 			$this->template->content->incident_location = $incident->location->location_name;
 			$this->template->content->incident_latitude = $incident->location->latitude;

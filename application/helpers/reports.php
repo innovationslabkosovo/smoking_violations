@@ -189,7 +189,7 @@ class reports_Core {
 	 * @param int $id ID no. of the report
 	 *
 	 */
-	public static function save_report($post, $incident, $location_id)
+	public static function save_report($post, $incident, $location)
 	{
 		// Exception handling
 		if ( ! $post instanceof Validation_Core AND  ! $incident instanceof Incident_Model)
@@ -199,9 +199,9 @@ class reports_Core {
 		}
 		
 		// Verify that the location id exists
-		if ( ! Location_Model::is_valid_location($location_id))
+		if ( ! Location_Model::is_valid_location($location->id))
 		{
-			throw new Kohana_Exception(sprintf('Invalid location id specified: ', $location_id));
+			throw new Kohana_Exception(sprintf('Invalid location id specified: ', $$location->id));
 		}
 		
 		// Is this new or edit?
@@ -216,7 +216,7 @@ class reports_Core {
 			$incident->incident_dateadd = date("Y-m-d H:i:s",time());
 		}
 		
-		$incident->location_id = $location_id;
+		$incident->location_id = $location->id;
 		//$incident->locale = $post->locale;
 		if (isset($post->form_id))
 		{
@@ -230,14 +230,21 @@ class reports_Core {
 			$incident->user_id = $_SESSION['auth_user']->id;
 		}
 		
-		$incident->incident_title = $post->incident_title." - Smoking Violation in ".$post->location_name;
+		$incident->incident_title = $post->incident_title;
+
+		if ($incident->incident_title == "")
+		{
+			$incident->incident_title = $location->location_name;
+		}
+
 		//Add selected categories to Report Description by default 		
 		$cats="";
-
+		$lng = Kohana::config('locale.language.0');
 		foreach ($post->incident_category as $item)
-		{
+		{			
+
 			$cat1 = ORM::factory('category')->where('id', $item)->find();
-			$cats .= $cat1->category_title.", ";
+			$cats .= Category_Lang_Model::category_title($cat1->id, $lng).", ";
 			
 		}
 

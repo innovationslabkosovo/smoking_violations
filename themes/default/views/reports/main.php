@@ -3,12 +3,18 @@
 		<!-- start reports block -->
 		<div class="big-block">
 			<h1 class="heading">
-				<?php $timeframe_title = date('M d, Y', $oldest_timestamp).' '.Kohana::lang('ui_main.through').' '.date('M d, Y', $latest_timestamp); ?>
-				<?php echo Kohana::lang('ui_main.showing_reports_from'); ?> 
-				<span class="time-period"><?php echo $timeframe_title; ?></span> 
+			<?php
+				$month_old = date('F', $oldest_timestamp);
+				$month_new = date('F',$latest_timestamp);
+				$r_month_old = Kohana::lang('datetime.'.$month_old.'.abbv');
+				$r_month_new = Kohana::lang('datetime.'.$month_new.'.abbv');
+				$timeframe_title = str_replace($month_old,$r_month_old, date('d F, Y', $oldest_timestamp)).' '.Kohana::lang('ui_main.through').' '.str_replace($month_new, $r_month_new,date('d F, Y',$latest_timestamp));
+			?>
+				<?php echo Kohana::lang('ui_main.showing_reports_from'); ?>
+				<span class="time-period"><?php echo $timeframe_title; ?></span>
 				<a href="#" class="btn-change-time ic-time"><?php echo Kohana::lang('ui_main.change_date_range'); ?></a>
 			</h1>
-			
+
 			<div id="tooltip-box">
 				<div class="tt-arrow"></div>
 				<ul class="inline-links">
@@ -33,7 +39,7 @@
 						</a>
 					</li>
 				</ul>
-				
+
 				<p class="labeled-divider"><span><?php echo Kohana::lang('ui_main.choose_date_range'); ?>:</span></p>
 				<?php echo form::open(NULL, array('method' => 'get')); ?>
 					<table>
@@ -49,21 +55,29 @@
 								<a href="#" id="applyDateFilter" class="filter-button" style="position:static;"><?php echo Kohana::lang('ui_main.go')?></a>
 							</td>
 						</tr>
-					</table>              
+					</table>
 				<?php form::close(); ?>
 			</div>
+
+
 
 			<div style="overflow:auto;">
 				<!-- reports-box -->
 				<div id="reports-box">
 					<?php echo $report_listing_view; ?>
+					<div class="disclaimer-box">
+						<div class="disclaimer">
+							<p id="text"><?php echo Kohana::lang('ui_main.disclaimer'); ?></p>
+						</div>
+					</div>
 				</div>
 				<!-- end #reports-box -->
-				
+
+
 				<div id="filters-box">
 					<h2><?php echo Kohana::lang('ui_main.filter_reports_by'); ?></h2>
 					<div id="accordion">
-						
+
 						<h3>
 							<a href="#" class="small-link-button f-clear reset" onclick="removeParameterKey('v', 'fl-verification');">
 								<?php echo Kohana::lang('ui_main.clear'); ?>
@@ -84,13 +98,13 @@
 										<span class="item-title"><?php echo Kohana::lang('ui_main.unverified'); ?></span>
 									</a>
 								</li>
-								
+
 							</ul>
 						</div>
 
-						
-						
-						<h3>	
+
+
+						<h3>
 							<a href="#" class="small-link-button f-clear reset" onclick="removeParameterKey('radius', 'f-location-box');removeParameterKey('start_loc', 'f-location-box');">
 								<?php echo Kohana::lang('ui_main.clear')?>
 							</a>
@@ -122,25 +136,25 @@
 								<?php echo $category_tree_view; ?>
 							</ul>
 						</div>
-						
-					
+
+
 						<?php
 							// Action, allows plugins to add custom filters
 							Event::run('ushahidi_action.report_filters_ui');
 						?>
 					</div>
 					<!-- end #accordion -->
-					
+
 					<div id="filter-controls">
 						<p>
-							<a href="#" class="small-link-button reset" id="reset_all_filters"><?php echo Kohana::lang('ui_main.reset_all_filters'); ?></a> 
+							<a href="#" class="small-link-button reset" id="reset_all_filters"><?php echo Kohana::lang('ui_main.reset_all_filters'); ?></a>
 							<a href="#" id="applyFilters" class="filter-button"><?php echo Kohana::lang('ui_main.filter_reports'); ?></a>
 						</p>
-					</div>          
+					</div>
 				</div>
 				<!-- end #filters-box -->
 			</div>
-      
+
 			<div style="display:none">
 				<?php
 					// Filter::report_stats - The block that contains reports list statistics
@@ -151,7 +165,7 @@
 
 		</div>
 		<!-- end reports block -->
-		
+
 	</div>
 	<!-- end content-bg -->
 </div>

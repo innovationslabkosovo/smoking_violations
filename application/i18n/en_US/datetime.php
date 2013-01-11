@@ -30,51 +30,51 @@
 		'abbv' => 'Wed',
 		'full' => 'Wednesday',
 	),
-	'january' => array(
+	'January' => array(
 		'abbv' => 'Jan',
 		'full' => 'January',
 	),
-	'february' => array(
+	'February' => array(
 		'abbv' => 'Feb',
 		'full' => 'February',
 	),
-	'march' => array(
+	'March' => array(
 		'abbv' => 'Mar',
 		'full' => 'March',
 	),
-	'april' => array(
+	'April' => array(
 		'abbv' => 'Apr',
 		'full' => 'April',
 	),
-	'may' => array(
+	'May' => array(
 		'abbv' => 'May',
 		'full' => 'May',
 	),
-	'june' => array(
+	'June' => array(
 		'abbv' => 'Jun',
 		'full' => 'June',
 	),
-	'july' => array(
+	'July' => array(
 		'abbv' => 'Jul',
 		'full' => 'July',
 	),
-	'august' => array(
+	'August' => array(
 		'abbv' => 'Aug',
 		'full' => 'August',
 	),
-	'september' => array(
+	'September' => array(
 		'abbv' => 'Sep',
 		'full' => 'September',
 	),
-	'october' => array(
+	'October' => array(
 		'abbv' => 'Oct',
 		'full' => 'October',
 	),
-	'november' => array(
+	'November' => array(
 		'abbv' => 'Nov',
 		'full' => 'November',
 	),
-	'december' => array(
+	'December' => array(
 		'abbv' => 'Dec',
 		'full' => 'December',
 	));

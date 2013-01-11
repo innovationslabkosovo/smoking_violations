@@ -1,7 +1,6 @@
 			</div>
 		</div>
 		<!-- / main body -->
-
 	</div>
 	<!-- / wrapper -->
 
@@ -39,7 +38,7 @@
 						</a>
 					</li>
 					<?php endif; ?>
-					
+
 					<?php if (Kohana::config('settings.allow_alerts')): ?>
 						<li>
 							<a href="<?php echo url::site()."alerts"; ?>">
@@ -64,10 +63,15 @@
 				<?php if ($site_copyright_statement != ''): ?>
 	      		<p><?php echo $site_copyright_statement; ?></p>
 		      	<?php endif; ?>
-		      	
+
 			</div>
 			<!-- / footer menu -->
 
+		<!-- <<div class="implemented footer-credits"> -->
+			<!-- <p>Implemented by &nbsp; <img src="<?php //echo url::file_loc('img'); ?>media/img/footer-logo.png"></img></p> -->
+			<!-- <p>Implemented by &nbsp; <img src="http://kosovoinnovations.org/sites/default/files/logo-final.png"></img></p> -->
+			<!-- <small>This platform is based on community reports and <br> Innovations Lab Kosovo is not responsible for the accuracy of information</small> -->
+		<!-- </div> -->
 
 		</div>
 		<!-- / footer content -->

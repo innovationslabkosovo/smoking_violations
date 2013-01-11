@@ -34,6 +34,8 @@
 		<div class="report-category-list">
 		<p>
 			<?php
+			$l = Kohana::config('locale.language.0');
+
 				foreach ($incident_category as $category)
 				{
 					// don't show hidden categoies
@@ -42,17 +44,19 @@
 						continue;
 					}
 
+				  $category_title = Category_Lang_Model::category_title($category->category->id, $l); 
+
 				  if ($category->category->category_image_thumb)
 					{
 					?>
-					<a href="<?php echo url::site()."reports/?c=".$category->category->id; ?>"><span class="r_cat-box" style="background:transparent url(<?php echo url::base().Kohana::config('upload.relative_directory')."/".$category->category->category_image_thumb; ?>) 0 0 no-repeat;">&nbsp;</span> <?php echo $category->category->category_title; ?></a>
+					<a href="<?php echo url::site()."reports/?c=".$category->category->id; ?>"><span class="r_cat-box" style="background:transparent url(<?php echo url::base().Kohana::config('upload.relative_directory')."/".$category->category->category_image_thumb; ?>) 0 0 no-repeat;">&nbsp;</span> <?php echo 	$category_title; ?></a>
 
 					<?php
 					}
 					else
 					{
 					?>
-					  <a href="<?php echo url::site()."reports/?c=".$category->category->id; ?>"><span class="r_cat-box" style="background-color:#<?php echo $category->category->category_color; ?>">&nbsp;</span> <?php echo $category->category->category_title; ?></a>
+					  <a href="<?php echo url::site()."reports/?c=".$category->category->id; ?>"><span class="r_cat-box" style="background-color:#<?php echo $category->category->category_color; ?>">&nbsp;</span> <?php echo $category_title; ?></a>
 				  <?php
 				  }
 				}
@@ -190,10 +194,10 @@
 			<div id="report-map" class="report-map">
 				<div class="map-holder" id="map"></div>
         <ul class="map-toggles">
-          <li><a href="#" class="smaller-map">Smaller map</a></li>
-          <li style="display:block;"><a href="#" class="wider-map">Wider map</a></li>
-          <li><a href="#" class="taller-map">Taller map</a></li>
-          <li><a href="#" class="shorter-map">Shorter Map</a></li>
+          <li><a href="#" class="smaller-map"><?php echo Kohana::lang('ui_main.smaller_map'); ?></a></li>
+          <li style="display:block;"><a href="#" class="wider-map"><?php echo Kohana::lang('ui_main.wider_map'); ?></a></li>
+          <li><a href="#" class="taller-map"><?php echo Kohana::lang('ui_main.taller_map'); ?></a></li>
+          <li><a href="#" class="shorter-map"><?php echo Kohana::lang('ui_main.shorter_map'); ?></a></li>
         </ul>
         <div style="clear:both"></div>
 			</div>

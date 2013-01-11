@@ -875,7 +875,7 @@
 					var $catname = $("#catname");
 
 					$catname.empty();
-					$catname.append('<option value="" disabled="disabled" selected>---Select---</option>');
+					$catname.append('<option value="" disabled="disabled" selected><?php echo Kohana::lang('ui_main.select') ?></option>');
 					$.get("<?php echo url::file_loc('img').'media/js/interpreter.xml'; ?>",{},function(xml){
 				  	
 					// Run the function for each node tag in the XML file
@@ -900,7 +900,7 @@
 		
 				});
 
-					}
+}
 
 		
 		// Reverse GeoCoder

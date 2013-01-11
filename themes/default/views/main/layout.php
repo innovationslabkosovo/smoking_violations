@@ -1,34 +1,35 @@
 <!-- main body -->
 
-	<!-- leftcol -->
 <div class="leftcol">
 	<div class="container">
 		<!-- logo -->
 		<div id="logo">
-			<h1><a href="#">Smoke-Free Kosovo</a></h1>
+			<!-- <h1><a href="#"><?php //echo Kohana::lang('ui_main.logo_header'); ?></a></h1> -->
+			<img id="logo-img" src="<?php echo url::file_loc('img').'media/img/llogo_png.png'; ?>"></img>
+			<h3 class="description"><?php echo Kohana::lang('ui_main.smoke_free'); ?></h3>
 		</div>
 		<!-- / logo -->
-		
+
 		<!-- submit form -->
 		<div class="submit-block">
-				<h5>Report a Violation</h5>
-	
+
+
 				<?php if ($site_submit_report_message != ''): ?>
 					<div class="green-box" style="margin: 25px 25px 0px 25px">
 						<h3><?php echo $site_submit_report_message; ?></h3>
 					</div>
 				<?php endif; ?>
-	
+
 				<!-- start report form block -->
 				<?php print form::open(NULL, array('enctype' => 'multipart/form-data', 'id' => 'reportForm', 'name' => 'reportForm', 'class' => 'gen_forms')); ?>
-	
-				
+
+
 				<input type="hidden" name="country_name" id="country_name" value="<?php echo $form['country_name']; ?>" />
 				<input type="hidden" name="incident_zoom" id="incident_zoom" value="<?php echo $form['incident_zoom']; ?>" />
 				<div class="big-block">
-	
+
 					<h5><?php echo Kohana::lang('ui_main.reports_submit_new'); ?></h5>
-	
+
 					<?php if ($form_error): ?>
 					<!-- red-box -->
 					<div class="red-box">
@@ -44,12 +45,12 @@
 						</ul>
 					</div>
 					<!-- end/ red-box-->
-					
+
 					<?php endif; ?>
 					<!-- hidden --> <div class="row"> <input type="hidden" name="form_id" id="form_id" value="<?php echo $id?>"/></div>
-					
+
 					<div class="report">
-						
+
 						<!-- categories --> <div class="report_row">
 							<h4><?php echo Kohana::lang('ui_main.reports_categories'); ?> <span class="required">*</span></h4>
 							<div class="report_category" id="categories">
@@ -57,8 +58,8 @@
 								$selected_categories = (!empty($form['incident_category']) AND is_array($form['incident_category']))
 									? $selected_categories = $form['incident_category']
 									: array();
-									
-								$columns = 2;
+
+								$columns = 5;
 								echo category::tree($categories1, TRUE, $selected_categories, 'incident_category', $columns);
 								?>
 							</div>
@@ -67,15 +68,15 @@
 						// Action::report_form - Runs right after the report categories
 						Event::run('ushahidi_action.report_form');
 						?>
-						
+
 						<?php Event::run('ushahidi_action.report_form_location', $id); ?>
 						<!-- dropdowns --><div class="report_row">
-							<h4>Location </h4>
-	
+							<h4><?php echo Kohana::lang('ui_main.location'); ?></h4>
+
 							<!-- hidden --> <input type="hidden" name="latitude" id="latitude" value=""/>
 							<!-- hidden --> <input type="hidden" name="longitude" id="longitude" value=""/>
-							
-							<p>Choose city<span class="required">*</span></p>
+
+							<p><?php echo Kohana::lang('ui_main.choose_city'); ?><span class="required">*</span></p>
 							<select name="city" id="city">
 								<option value="" selected>Prishtina</option>
 								<option value="" disabled="disabled">Gjakova</option>
@@ -85,57 +86,57 @@
 								<option value="" disabled="disabled">Mitrovica</option>
 								<option value="" disabled="disabled"></option>
 							</select>
-							
-							<p>Choose type of public place<span class="required">*</span></p>
+
+							<p><?php echo Kohana::lang('ui_main.choose_place'); ?><span class="required">*</span></p>
 							<select name="cat" id="cat" onChange="getValues(this.value)">
-								<option value="" disabled="disabled" selected>---Select---</option>
-								<option value="government">Governmental Institutions</option>
-								<option value="public_companies">Public Companies</option>
-								<option value="independent_agencies">Independent Agencies</option>
-								<option value="police">Police Stations</option>
-								<option value="courthouse">Courts</option>
-								<option value="hospital">Health Centers</option>
-								<option value="university">Universities</option>
-								<option value="school">Schools</option>
-								<option value="library">Libraries</option>
-								<option value="restaurant">Restaurants</option>
-								<option value="pub">Pubs</option>
-								<option value="cafe">Caffes</option>
-								<option value="bar">Bars</option>
-								<option value="theatre">Theatres</option>
-								<option value="cinema">Cinemas</option>
+								  <option value="" disabled="disabled" selected><?php echo Kohana::lang('ui_main.select'); ?></option>
+								  <option value="government"><?php echo Kohana::lang('ui_main.government'); ?></option>
+								  <option value="public_companies"><?php echo Kohana::lang('ui_main.public_companies'); ?></option>
+								  <option value="independent_agencies"><?php echo Kohana::lang('ui_main.independent_agencies'); ?></option>
+								  <option value="police"><?php echo Kohana::lang('ui_main.police'); ?></option>
+							 	  <option value="courthouse"><?php echo Kohana::lang('ui_main.court'); ?></option>
+								  <option value="hospital"><?php echo Kohana::lang('ui_main.hospital'); ?></option>
+								  <option value="university"><?php echo Kohana::lang('ui_main.university'); ?></option>
+								  <option value="school"><?php echo Kohana::lang('ui_main.school'); ?></option>
+								  <option value="library"><?php echo Kohana::lang('ui_main.library'); ?></option>
+								  <option value="restaurant"><?php echo Kohana::lang('ui_main.restaurant'); ?></option>
+								  <option value="pub"><?php echo Kohana::lang('ui_main.pub'); ?></option>
+								  <option value="cafe"><?php echo Kohana::lang('ui_main.cafe'); ?></option>
+								  <option value="bar"><?php echo Kohana::lang('ui_main.bar'); ?></option>
+								  <option value="theatre"><?php echo Kohana::lang('ui_main.theatre'); ?></option>
+								  <option value="cinema"><?php echo Kohana::lang('ui_main.cinema'); ?></option>
 							</select>
-							
-							<p>Choose location<span class="required">*</span></p>
-							  <select name="catname" id="catname" onchange=' var obj = this.value.split(",") ; document.getElementById("latitude").value = obj[0];document.getElementById("longitude").value = obj[1];document.getElementById("location_name").value = obj[2]; document.getElementById("incident_title").value = "Smoking Violation "+ obj[2] ;' >
-										<option value="" disabled="disabled" selected>---Select---</option>
+
+							<p><?php echo Kohana::lang('ui_main.choose_location'); ?><span class="required">*</span></p>
+							  <select name="catname" id="catname" onchange=' var obj = this.value.split(",") ; document.getElementById("latitude").value = obj[0];document.getElementById("longitude").value = obj[1];document.getElementById("location_name").value = obj[2]; document.getElementById("incident_title").value = obj[2] ;' >
+										<option value="" disabled="disabled" selected><?php echo Kohana::lang('ui_main.select'); ?></option>
 							  </select>
-	
+
 							<h4><?php //echo Kohana::lang('ui_main.reports_location_name'); ?> </h4>
-							
+
 							<?php print form::input('location_name', $form['location_name'], ' class="text long" style="display:none;"'); ?>
 						</div>
 						<!-- date & time --> <div class="report_row" id="datetime_default">
 							<h6>
-								<?php echo Kohana::lang('ui_main.date_time'); ?>: 
+								<?php echo Kohana::lang('ui_main.date_time'); ?>:
 								<?php echo Kohana::lang('ui_main.today_at')." "."<span id='current_time'>".$form['incident_hour']
-									.":".$form['incident_minute']." ".$form['incident_ampm']."</span>"; ?>
+									.":".$form['incident_minute']." ".Kohana::lang('datetime.'.$form['incident_ampm'])."</span>"; ?>
 								<?php if($site_timezone != NULL): ?>
 									<small>(<?php echo $site_timezone; ?>)</small>
 								<?php endif; ?>
 							</h6>
-							<!-- remove Modify Date option --><!--<a href="#" id="date_toggle" class="show-more"><?php echo Kohana::lang('ui_main.modify_date'); ?></a> -->
+							<!-- remove Modify Date option --><!--<a href="#" id="date_toggle" class="show-more"><?php //echo Kohana::lang('ui_main.modify_date'); ?></a> -->
 						</div>
-	
+
 						<!-- hidden shit -->
 						<!-- hidden --> <div id="divNews" class="report_row" style="display:none">
 							<h4><?php echo Kohana::lang('ui_main.reports_news'); ?></h4>
-							
-							<?php 
+
+							<?php
 								// Initialize the counter
 								$i = (empty($form['incident_news'])) ? 1 : 0;
 							?>
-	
+
 							<?php if (empty($form['incident_news'])): ?>
 								<div class="report_row">
 									<?php print form::input('incident_news[]', '', ' class="text long2"'); ?>
@@ -146,18 +147,18 @@
 								<div class="report_row" id="<?php echo $i; ?>">
 									<?php echo form::input('incident_news[]', $value, ' class="text long2"'); ?>
 									<a href="#" class="add" onClick="addFormField('divNews','incident_news','news_id','text'); return false;">add</a>
-	
+
 									<?php if ($i != 0): ?>
 										<?php $css_id = "#incident_news_".$i; ?>
 										<a href="#" class="rem"	onClick="removeFormField('<?php echo $css_id; ?>'); return false;">remove</a>
 									<?php endif; ?>
-	
+
 								</div>
 								<?php $i++; ?>
-	
+
 								<?php endforeach; ?>
 							<?php endif; ?>
-	
+
 							<?php print form::input(array('name'=>'news_id', 'type'=>'hidden', 'id'=>'news_id'), $i); ?>
 						</div>
 						<!-- hidden --> <div class="report_row"  style="display:none" >
@@ -185,10 +186,10 @@
 								<?php print form::input('incident_date', $form['incident_date'], ' class="text short"'); ?>
 								<script type="text/javascript">
 									$().ready(function() {
-										$("#incident_date").datepicker({ 
-											showOn: "both", 
-											buttonImage: "<?php echo url::file_loc('img'); ?>media/img/icon-calendar.gif", 
-											buttonImageOnly: true 
+										$("#incident_date").datepicker({
+											showOn: "both",
+											buttonImage: "<?php echo url::file_loc('img'); ?>media/img/icon-calendar.gif",
+											buttonImageOnly: true
 										});
 									});
 								</script>
@@ -220,7 +221,7 @@
 							<div style="clear:both; display:block;" id="incident_date_time"></div>
 						</div>
 						<!-- hidden --> <div class="report_optional" style="display:none">
-	
+
 							<h3><?php echo Kohana::lang('ui_main.reports_optional'); ?></h3>
 							<div class="report_row">
 								<h4><?php echo Kohana::lang('ui_main.reports_first'); ?></h4>
@@ -240,10 +241,10 @@
 							?>
 						</div>
 						<!-- hidden --> <?//php echo $custom_forms ?>
-	
+
 						<!-- submit button -->
 						<div class="report_row">
-							<input name="submit" type="submit" value="<?php echo Kohana::lang('ui_main.reports_btn_submit'); ?>" class="btn_submit" /> 
+							<input name="submit" type="submit" value="<?php echo Kohana::lang('ui_main.reports_btn_submit'); ?>" class="btn_submit" />
 						</div>
 					</div><!-- end/ report -->
 				</div>
@@ -251,12 +252,12 @@
 				<!-- end report form block -->
 			</div>
 		<!-- /end submit form -->
-		
+
 		<!-- social media -->
 		<div id="social-boxes">
 				<!-- facebook -->
 				<div id="fb-likebox">	<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FKosovoInnovations&amp;width=280&amp;height=395&amp;colorscheme=light&amp;show_faces=false&amp;border_color=%23ebebeb&amp;stream=true&amp;header=false&amp;appId=170256203031026" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:280px; height:395px;" allowTransparency="true"></iframe></div>
-				
+
 				<!-- twitter -->
 				<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
 				<div id="twitter-feedbox" style="margin-top: 10px; border:1px solid #ebebeb; width:280px;">
@@ -264,10 +265,10 @@
 					new TWTR.Widget({
 					  version: 2,
 					  type: 'search',
-					  search: '#smoking',
+					  search: '#TakeTuke',
 					  interval: 30000,
 					  title: 'Smoking hashtag tweets',
-					  subject: 'Smoking Violations',																											
+					  subject: 'Smoking Violations',
 					  width: 280,
 					  height: 200,
 					  theme: {
@@ -306,7 +307,7 @@
 			<h3><?php echo $site_message; ?></h3>
 		</div>
 	<?php endif; ?>
-	
+
 		<!-- content column -->
     	<div id="content" class="clearingfix">
     		<!-- map with filters -->
@@ -326,10 +327,10 @@
 
 				</div>
 				<!-- / filters -->
-				
+
 				<!-- category filters -->
 				<div id="category-filters">
-
+				<?php if ($layers): ?>
 					<div class="cat-filters clearingfix">
 						<strong>
 							<?php echo Kohana::lang('ui_main.category_filter');?>
@@ -339,6 +340,13 @@
 								</a>]
 							</span>
 						</strong>
+			<strong><?php echo Kohana::lang('ui_main.layers_filter');?>
+				<span>
+					[<a href="javascript:toggleLayer('kml_switch_link', 'kml_switch')" id="kml_switch_link">
+						<?php echo Kohana::lang('ui_main.hide'); ?>
+					</a>]
+				</span>
+			</strong>
 					</div>
 					<ul id="category_switch" class="category-filters top_filters">
 						<?php
@@ -359,18 +367,34 @@
 								<span class="category-title"><?php echo Kohana::lang('ui_main.all_categories');?></span>
 							</a>
 						</li>
-						<li> 
+						<li>
 							<ul id="kml_switch" class="category-filters">
-								<li>
-									<a href="#" id="layer_13">
-									<div class="swatch" style="background-color:#11d611"></div>
-									<div class="layer-name">Smoke Free</div>
-									</a>
-								</li>	
+								<?php
+									foreach ($layers as $layer => $layer_info)
+									{
+										$layer_name = $layer_info[0];
+										$layer_color = $layer_info[1];
+										$layer_url = $layer_info[2];
+										$layer_file = $layer_info[3];
+
+										$layer_link = ( ! $layer_url)
+										    ? url::base().Kohana::config('upload.relative_directory').'/'.$layer_file
+										    : $layer_url;
+
+										echo '<li>'
+										    . '<a href="#" id="layer_'. $layer .'">'
+										    . '<div class="swatch" style="background-color:#11d611"></div>'
+										    . '<div class="layer-name">'.Kohana::lang('ui_main.free_layer').'</div>'
+										    . '</a>'
+										    . '</li>';
+									}
+								?>
 							</ul>
 						</li>
 					</ul>
-					
+					<!-- /Layers -->
+					<?php endif; ?>
+
 					<div class="cat-filters clearingfix">
 						<strong>
 							<?php echo Kohana::lang('ui_main.category_filter');?>
@@ -390,7 +414,7 @@
 							$category_image = ($category_info[2] != NULL)
 								? url::convert_uploaded_to_abs($category_info[2])
 								: NULL;
-	
+
 							$color_css = 'class="swatch" style="background-color:#'.$category_color.'"';
 							if ($category_info[2] != NULL)
 							{
@@ -400,13 +424,13 @@
 									));
 								$color_css = '';
 							}
-	
+
 							echo '<li>'
 								. '<a href="#" id="cat_'. $category .'">'
 								. '<span '.$color_css.'>'.$category_image.'</span>'
 								. '<span class="category-title">'.$category_title.'</span>'
 								. '</a>';
-	
+
 							// Get Children
 							echo '<div class="hide" id="child_'. $category .'">';
 							if (sizeof($category_info[3]) != 0)
@@ -419,7 +443,7 @@
 									$child_image = ($child_info[2] != NULL)
 										? url::convert_uploaded_to_abs($child_info[2])
 										: NULL;
-									
+
 									$color_css = 'class="swatch" style="background-color:#'.$child_color.'"';
 									if ($child_info[2] != NULL)
 									{
@@ -427,10 +451,10 @@
 											'src' => $child_image,
 											'style' => 'float:left;padding-right:5px;'
 										));
-	
+
 										$color_css = '';
 									}
-	
+
 									echo '<li style="padding-left:20px;">'
 										. '<a href="#" id="cat_'. $child .'">'
 										. '<span '.$color_css.'>'.$child_image.'</span>'
@@ -447,13 +471,13 @@
 
 				</div>
 				<!-- / category filters -->
-				
+
 				<!-- map and timeline -->
 				<?php
 				echo $div_map;
 				echo $div_timeline;
 				?>
-				
+
 				<div id="other-layers">
 					<div class="cat-filters clearingfix">
 					<strong>Other Layers
@@ -463,68 +487,27 @@
 					</span>
 					</strong>
 					</div>
-					
+
 				</div>
-				
+
 			</div><!-- end/ floatbox -->
 
-			<!-- Full Sreen Map Button -->
-
-			<!-- Add jQuery library -->
-	 <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
-
-
-	<!-- Add fancyBox main JS and CSS files -->
-	<script type="text/javascript" src="http://server1.kosovoinnovations.org:40/fancybox/source/jquery.fancybox.js?v=2.0.6"></script>
-	<link rel="stylesheet" type="text/css" href="http://server1.kosovoinnovations.org:40/fancybox/source/jquery.fancybox.css?v=2.0.6" media="screen" />
-			<script type="text/javascript">
-
-			$(document).ready(function() {
-			
-
-			$('.fancybox').fancybox();
-
-			// Jquery looking for class to be fullscreen
-
-			$(".fullscreenmap").fancybox({
-			fitToView	: false,
-			width		: '100%',
-			height		: '100%',
-			autoSize	: false,
-			closeClick	: false,
-			openEffect	: 'none',
-			closeEffect	: 'none'
-	});
-});
-	</script>
-			
-			<style type="text/css">
-			.fancybox-custom .fancybox-skin {box-shadow: 0 0 50px #222;}
-			.button {float:right;}
-			.fancybox-skin {width:97% !important;}
-			</style>
-
-			<ul class="button">
-		<button class="fullscreenmap fancybox.iframe" href="http://server1.kosovoinnovations.org:40/iframe.html">Full Screen Map</button>
-			</ul>
-			<!-- / Full Screen Map -->
-
 			<div id="words">
-				<h2>Did you know?</h2>
-				<p>47.2% of young people first tried a cigarette before the age of 18 years.</p>
-				<p>20.9% of pregnant women are smoking in Kosovo.</p>
-				<p>53.6% of children are exposed to secondary smoking.</p>
-			</div> 	
+				<h2><?php echo Kohana::lang('ui_main.did_you_know'); ?></h2>
+				<p><?php echo Kohana::lang('ui_main.first_fact'); ?></p>
+				<p><?php echo Kohana::lang('ui_main.sec_fact'); ?></p>
+				<p><?php echo Kohana::lang('ui_main.third_fact'); ?></p>
+			</div>
 
-			
-			
+
+
 			<!-- reports listing -->
 			<div class="content-container">
 				<?php
 						// Action::main_filters - Add items to the main_filters
 						Event::run('ushahidi_action.map_main_filters');
 						?>
-						
+
 				<!-- content blocks -->
 				<div class="content-blocks clearingfix">
 					<ul class="content-column">
@@ -532,26 +515,30 @@
 					</ul>
 				</div>
 				<!-- /content blocks -->
-				
+
 			</div>
 			<!-- end/ reports listing -->
-			
-			
 
+
+			<div class="disclaimer-box">
+					<div class="disclaimer">
+						<p><?php echo Kohana::lang('ui_main.disclaimer'); ?></p>
+					</div>
+				</div>
         </div>
     	 <!-- / content column -->
-		
+
 		<!-- this div is hidden because we do not need the content within -->
 			<!-- right column -->
 			<div id="right" class="clearingfix">
-	
+
 				<!-- additional content -->
 				<?php if (Kohana::config('settings.allow_reports')): ?>
 					<div class="additional-content">
 						<h5><?php echo Kohana::lang('ui_main.how_to_report'); ?></h5>
-	
+
 						<div>
-	
+
 							<!-- Phone -->
 							<?php if ( ! empty($phone_array)): ?>
 							<div style="margin-bottom:10px;">
@@ -564,7 +551,7 @@
 								<?php endforeach; ?>
 							</div>
 							<?php endif; ?>
-							
+
 							<!-- External Apps -->
 							<?php if (count($external_apps) > 0): ?>
 							<div style="margin-bottom:10px;">
@@ -574,7 +561,7 @@
 								<?php endforeach; ?>
 							</div>
 							<?php endif; ?>
-	
+
 							<!-- Email -->
 							<?php if ( ! empty($report_email)): ?>
 							<div style="margin-bottom:10px;">
@@ -582,7 +569,7 @@
 								<a href="mailto:<?php echo $report_email?>"><?php echo $report_email?></a>
 							</div>
 							<?php endif; ?>
-	
+
 							<!-- Twitter -->
 							<?php if ( ! empty($twitter_hashtag_array)): ?>
 							<div style="margin-bottom:10px;">
@@ -595,20 +582,20 @@
 								<?php endforeach; ?>
 							</div>
 							<?php endif; ?>
-	
+
 							<!-- Web Form -->
 							<div style="margin-bottom:10px;">
 								<a href="<?php echo url::site().'reports/submit/'; ?>">
 									<?php echo Kohana::lang('ui_main.report_option_4'); ?>
 								</a>
 							</div>
-	
+
 						</div>
-	
+
 					</div>
 				<?php endif; ?>
 				<!-- / additional content -->
-				
+
 				<!-- Checkins -->
 				<?php if (Kohana::config('settings.checkins')): ?>
 				<br/>
@@ -618,12 +605,12 @@
 				</div>
 				<?php endif; ?>
 				<!-- /Checkins -->
-				
+
 				<?php
 				// Action::main_sidebar - Add Items to the Entry Page Sidebar
 				Event::run('ushahidi_action.main_sidebar');
 				?>
-		
+
 			</div>
 			<!-- / right column -->
 	</div>

@@ -242,7 +242,7 @@
 		<!-- content -->
 		<div id="content">
 			<div class="bg">
-				<?php print $content; ?>
+				<?php echo $content; ?>
 			</div>
 		</div>
 	</div>

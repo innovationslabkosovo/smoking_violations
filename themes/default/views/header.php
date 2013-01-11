@@ -48,7 +48,6 @@
 			<?php if ($allow_feed == 1) { ?>
 			<!-- <div style="float:right;"><a href="<?php echo url::site(); ?>feed/"><img src="<?php echo url::file_loc('img'); ?>media/img/icon-feed.png" style="vertical-align: middle;" border="0"></a></div> -->
 			<?php } ?>
-			
 			<!-- searchbox -->
 			<div id="searchbox">
 

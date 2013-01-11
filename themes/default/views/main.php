@@ -349,20 +349,20 @@
 						
 					<?php Event::run('ushahidi_action.report_form_location', $id); ?>
 					<div class="report_row">
-
 							<input type="hidden" name="latitude" id="latitude" value="">
 							<input type="hidden" name="longitude" id="longitude" value="">
 
 							<select name="cat" id="cat" onchange='getValues(this.value)'>
 							 
-							          <option value="" disabled="disabled" selected>---Select a City---</option>
-							          <option value="prishtina" id="">Prishtina</option>
-							          <option value="" id="" disabled="disabled">Prizren</option>
-							          <option value="" id="" disabled="disabled">Peja</option>
-							          <option value="" id="" disabled="disabled">Gjakova</option>
-							          <option value="" id="" disabled="disabled">Mitrovica</option>
-							           <option value="" id="" disabled="disabled">Gjilan</option>
-							            <option value="" id="" disabled="disabled">Feizaj</option>
+						          <option value="" disabled="disabled" selected>---Select a City---</option>
+						          <option value="prishtina" id="">Prishtina</option>
+						          <option value="" id="" disabled="disabled">Prizren</option>
+						          <option value="" id="" disabled="disabled">Peja</option>
+						          <option value="" id="" disabled="disabled">Gjakova</option>
+						          <option value="" id="" disabled="disabled">Mitrovica</option>
+						          <option value="" id="" disabled="disabled">Gjilan</option>
+				            	  <option value="" id="" disabled="disabled">Feizaj</option>
+							      <option value="" id="" disabled="disabled">aaa</option>
 							 
 							  </select>
 						

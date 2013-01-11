@@ -16,7 +16,7 @@
  * @license    http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License (LGPL) 
  */
 ?>
-		
+
 // Initialize the Ushahidi namespace
 Ushahidi.baseUrl = "<?php echo url::site(); ?>";
 Ushahidi.markerRadius = <?php echo $marker_radius; ?>;
@@ -70,39 +70,38 @@ function showCheckinData(event) {
 	map.addPopup(popup);
 }
 
+function getValues(value) {
 
-function getValues(value){
+    // Declaring a var so jQuery doesn't have to jump to the pool everytime		
+    var $catname = $("#catname");
 
-					// Declaring a var so jQuery doesn't have to jump to the pool everytime		
-					var $catname = $("#catname");
+    $catname.empty();
+    $catname.append('<option value="" disabled="disabled" selected><?php echo Kohana::lang('ui_main.select'); ?></option>');
+    $.get("<?php echo url::file_loc('img').'media/js/interpreter.xml'; ?>", {}, function (xml) {
 
-					$catname.empty();
-					$catname.append('<option value="" disabled="disabled" selected>---Select---</option>');
-					$.get("<?php echo url::file_loc('img').'media/js/interpreter.xml'; ?>",{},function(xml){
-				  	
-					// Run the function for each node tag in the XML file
-					$('node',xml).each(function(i) {
+        // Run the function for each node tag in the XML file
+        $('node', xml).each(function (i) {
 
-						// Declaring a var so jQuery doesn't have to jump to the pool everytime
-						var $this = $(this);
+            // Declaring a var so jQuery doesn't have to jump to the pool everytime
+            var $this = $(this);
 
-						name =$this.find("[k='name']").attr("v");
-						amenity =$this.find("[k='amenity']").attr("v");
-						latitude =$this.find("tag").parent().attr("lat");
-						longitude =$this.find("tag").parent().attr("lon");
+            name = $this.find("[k='name']").attr("v");
+            amenity = $this.find("[k='amenity']").attr("v");
+            latitude = $this.find("tag").parent().attr("lat");
+            longitude = $this.find("tag").parent().attr("lon");
 
-						// The if statment
-						if (value==amenity) {
+            // The if statment
+            if (value == amenity) {
 
-							$catname.append("<option value='"+latitude+","+longitude+","+name+"'>"+name+"</option>");
-				
-						}
-			
-					});
-		
-				});
+                $catname.append("<option value='" + latitude + "," + longitude + "," + name + "'>" + name + "</option>");
 
-					}
+            }
+
+        });
+
+    });
+
+}
 
 /**
  * Display Checkin Points

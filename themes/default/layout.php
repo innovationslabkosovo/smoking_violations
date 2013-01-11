@@ -1,5 +1,6 @@
 <!-- main body -->
 <div id="main" class="clearingfix">
+	
 	<div id="mainmiddle" class="floatbox">
 
 	<?php if ($site_message != ''): ?>
@@ -131,7 +132,7 @@
 						    : $layer_url;
 						
 						echo '<li>'
-						    . '<a href="#" id="layer_13'. $layer .'">'
+						    . '<a href="#" id="layer_'. $layer .'">'
 						    . '<div class="swatch" style="background-color:#'.$layer_color.'"></div>'
 						    . '<div class="layer-name">'.$layer_name.'</div>'
 						    . '</a>'

@@ -191,24 +191,17 @@ class Json_Controller extends Template_Controller {
 		}
 
 		// Get Zoom Level
-		$zoomLevel = (isset($_GET['z']) AND !empty($_GET['z'])) ?
-			(int) $_GET['z'] : 8;
+		$zoomLevel = (isset($_GET['z']) AND !empty($_GET['z'])) ? (int) $_GET['z'] : 8;
 
-		//$distance = 60;
-		//$distance = 0.000001;
-		//$distance = (10000000 >> $zoomLevel) / 100000;
-
-		// if $zoomLevel is smaller than 11 does the clustering part otherwise no
-
-		if ($zoomLevel < 11)
-                        {
-                                $distance = (10000000 >> $zoomLevel) / 100000;
-                        }
-                        else
-                        {
-                                $distance = 0.00001;
-                        }
- 			
+		// if $zoomLevel is smaller than 11 do the clustering part otherwise no
+ 		if ($zoomLevel < 11)
+ 		{
+ 			$distance = (10000000 >> $zoomLevel) / 100000;
+ 		}
+ 		else
+ 		{
+ 			$distance = 0.00001;
+ 		}
 
 		// Fetch the incidents using the specified parameters
 		$incidents = reports::fetch_incidents();

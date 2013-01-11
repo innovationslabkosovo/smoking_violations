@@ -628,11 +628,11 @@ class Main_Controller extends Template_Controller {
 
 				if ($check_exist == 0){
 				
-					reports::save_report($post, $incident, $location->id);
+					reports::save_report($post, $incident, $location);
 				}
 				else
 				{
-					reports::save_report($post, $incident, $location_id1);
+					reports::save_report($post, $incident, $loc);
 				}
 				// STEP 2b: SAVE INCIDENT GEOMETRIES
 				reports::save_report_geometry($post, $incident);
