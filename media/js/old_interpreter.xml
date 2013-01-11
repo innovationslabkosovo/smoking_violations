@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API">
+<note>The data included in this document is from www.openstreetmap.org. It has there been collected by a large group of contributors. For individual attribution of each item please refer to http://www.openstreetmap.org/api/0.6/[node|way|relation]/#id/history </note>
+<meta osm_base="2012-05-24T14:05:03Z"/>
+
+  <node id="47850382" lat="42.6607912" lon="21.1623106">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Tirona"/>
+  </node>
+  <node id="47850382" lat="42.6571987" lon="21.1595146">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Fellini"/>
+  </node>
+  <node lat="42.6699453" lon="21.1915514">
+    <tag k="amenity" v="university"/>
+    <tag k="name" v="The American University in Kosovo"/>
+  </node>
+  <node id="47850398" lat="42.6612484" lon="21.1599869">
+    <tag k="amenity" v="pub"/>
+    <tag k="name" v="Phoenix"/>
+  </node>
+  <node id="442967451" lat="42.6460337" lon="21.1599449">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Momento"/>
+  </node>
+  <node id="446819327" lat="42.6621941" lon="21.1617913">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Strip Depot"/>
+  </node>
+  <node id="446819332" lat="42.6617798" lon="21.1617854">
+    <tag k="amenity" v="cinema"/>
+    <tag k="name" v="ABC Cinema"/>
+  </node>
+  <node id="448873177" lat="42.6446173" lon="21.1610597">
+    <tag k="amenity" v="hospital"/>
+    <tag k="name" v="Klinika"/>
+  </node>
+  <node lat="42.6639443" lon="21.162262">
+    <tag k="amenity" v="hospital" />
+    <tag k="name" v="Instituti Kombëtar i Shëndetësisë Publike" />
+  </node>
+  <node id="476473631" lat="42.6428654" lon="21.1444736">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Garden"/>
+  </node>
+  <node id="495995544" lat="42.6639443" lon="21.1622620">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Dit e Nat"/>
+    <tag k="website" v="http://ditenat.com"/>
+    <tag k="website:1" v="http://www.balkaninsight.com/en/main/life_and_style/17996/"/>
+    <tag k="website:3" v="http://www.newkosovareport.com/Elizabeth-Gowing/When-books-sell-better-than-macchiatos.html"/>
+  </node>
+  <node id="508416356" lat="42.6592894" lon="21.1600309">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Metro"/>
+  </node>
+  <node id="517589630" lat="42.6444696" lon="21.1623025">
+    <tag k="amenity" v="hospital"/>
+    <tag k="name" v="Klinika Kirurgjike"/>
+  </node>
+  <node id="517589633" lat="42.6452315" lon="21.1621742">
+    <tag k="amenity" v="hospital"/>
+    <tag k="emergency" v="yes"/>
+    <tag k="name" v="Qendra per rastet urgjente dhe transfuzionin e gjakut"/>
+  </node>
+  <node id="517589635" lat="42.6445015" lon="21.1645252">
+    <tag k="amenity" v="hospital"/>
+    <tag k="name" v="Klinika Gjinekologjike"/>
+  </node>
+  <node id="518438002" lat="42.6511268" lon="21.1657532">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Gizzi"/>
+    <tag k="tel" v="00381 38 55 55 22"/>
+    <tag k="website" v="www.gizzigroup.com"/>
+  </node>
+  <node id="539459752" lat="42.6560949" lon="21.1614891">
+    <tag k="amenity" v="university"/>
+    <tag k="name" v="Universiteti i Prishtinës - Fakulteti Filozofik"/>
+    <tag k="website" v="http://filozofiku.uni-pr.edu/"/>
+  </node>
+  <node id="539478790" lat="42.6586917" lon="21.1571366">
+    <tag k="amenity" v="courthouse"/>
+    <tag k="name" v="Gjykata Kushtetuese e Kosoves"/>
+    <tag k="name:en" v="Kosovo Constitutional Court"/>
+    <tag k="name:sr" v="Ustavni Sud Kosova"/>
+  </node>
+    <node  lat="42.6615536" lon="21.162949">
+    <tag k="amenity" v="courthouse"/>
+    <tag k="name" v="Oda e Avokatëve"/>
+  </node>
+    <node  lat="42.6644773" lon="21.1603735">
+    <tag k="amenity" v="courthouse"/>
+    <tag k="name" v="Këshilli Prokurorial i Kosovës "/>
+  </node>
+  <node  lat="42.6644773" lon="21.1603735">
+    <tag k="amenity" v="courthouse"/>
+    <tag k="name" v="Prokuroria e Kosovës"/>
+  </node>
+    <node  lat="42.6505785" lon="21.1586713">
+    <tag k="amenity" v="courthouse"/>
+    <tag k="name" v="Gjykata per Kundervajtje"/>
+  </node>
+  <node id="539509886" lat="42.6577203" lon="21.1593063">
+    <tag k="amenity" v="school"/>
+    <tag k="name" v="Shkolla Fillore Faik Konica"/>
+  </node>
+  <node id="556718384" lat="42.6479705" lon="21.1410031">
+    <tag k="amenity" v="school"/>
+    <tag k="name" v="Elektrotechnik Lyceum Don Bosko"/>
+  </node>
+  <node id="585148707" lat="42.6573999" lon="21.1599277">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Papillon"/>
+  </node>
+  <node id="587639829" lat="42.6623556" lon="21.1563565">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Prishtina"/>
+  </node>
+  <node id="587989674" lat="42.6666818" lon="21.1593015">
+    <tag k="amenity" v="school"/>
+    <tag k="name" v="Shkolla Fillore Meto Bajraktari"/>
+    <tag k="name:en" v="Elementary school Meto Bajraktari"/>
+  </node>
+  <node id="588452904" lat="42.6678547" lon="21.1685444">
+    <tag k="amenity" v="school"/>
+    <tag k="name" v="Shkolla e Mesme Teknike 28 Nëntori"/>
+  </node>
+  <node id="595459349" lat="42.6591358" lon="21.1676917">
+    <tag k="amenity" v="police"/>
+    <tag k="name" v="Stacioni Policor - Aktash"/>
+  </node>
+  <node id="595459373" lat="42.6656313" lon="21.1679772">
+    <tag k="amenity" v="school"/>
+    <tag k="name" v="Shkolla Fillore Elena Gjika"/>
+  </node>
+  <node id="595793572" lat="42.6657218" lon="21.1614428">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="de Rada Braserie"/>
+    <tag k="note" v="Hapur:E hene-E Shtune nga 08:00-24:00"/>
+    <tag k="operator" v="de Rada"/>
+  </node>
+  <node id="598614336" lat="42.6656626" lon="21.1606757">
+    <tag k="Newspaper Lajm" v="Office"/>
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Swiss Diamond hotels"/>
+    <tag k="operator" v="Diamond"/>
+    <tag k="tourism" v="hotel"/>
+  </node>
+  <node id="598614337" lat="42.6652377" lon="21.1601512">
+    <tag k="addr:city" v="Prishtina"/>
+    <tag k="addr:street" v="Luan Haradinaj"/>
+    <tag k="amenity" v="cafe"/>
+    <tag k="is_in:country" v="Kosovo"/>
+    <tag k="name" v="Mollkuqja"/>
+    <tag k="note" v="caffe bar"/>
+    <tag k="operator" v="Mollkuqja"/>
+  </node>
+  <node id="598614338" lat="42.6650819" lon="21.1601646">
+    <tag k="addr:street" v="Migjeni"/>
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Home"/>
+    <tag k="operator" v="Home"/>
+  </node>
+  <node id="598614339" lat="42.6639831" lon="21.1600760">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Parcae"/>
+    <tag k="operator" v="Parcae"/>
+  </node>
+  <node id="598614340" lat="42.6639752" lon="21.1598024">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="description" v="International Restaurant"/>
+    <tag k="name" v="Gresa"/>
+    <tag k="operator" v="Princesha Gresa"/>
+  </node>
+  <node id="598614342" lat="42.6642273" lon="21.1590904">
+    <tag k="amenity" v="pub"/>
+    <tag k="name" v="Osteria Basilica"/>
+    <tag k="operator" v="Osteria Basilica"/>
+  </node>
+  <node id="598795159" lat="42.6494811" lon="21.1405688">
+    <tag k="amenity" v="school"/>
+    <tag k="description" v="Shkolle e mesme Ekonomike"/>
+    <tag k="name" v="Shkolla e Mesme Hoxhe Kadri Prishtina"/>
+  </node>
+  <node id="599655477" lat="42.6615560" lon="21.1632840">
+    <tag k="amenity" v="pub"/>
+    <tag k="name" v="People's"/>
+  </node>
+  <node id="599655479" lat="42.6621594" lon="21.1612374">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="La Artista"/>
+  </node>
+  <node id="599655480" lat="42.6635309" lon="21.1621873">
+    <tag k="addr:street" v="Rr. Fehmi Agani 12"/>
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Gagi cafe"/>
+    <tag k="phone" v="+386 49 52 25 11"/>
+  </node>
+  <node id="599655481" lat="42.6624258" lon="21.1613849">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Aroma"/>
+  </node>
+  <node id="599655483" lat="42.6628608" lon="21.1607934">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Alaturka-Turkish Restaurant"/>
+  </node>
+  <node id="599655484" lat="42.6628546" lon="21.1622493">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Select"/>
+  </node>
+  <node id="599655485" lat="42.6657376" lon="21.1616467">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Repubic"/>
+  </node>
+  <node id="599655487" lat="42.6614531" lon="21.1636044">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Cantina-Mexican Food"/>
+  </node>
+  <node id="599655488" lat="42.6612967" lon="21.1638949">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Pishat"/>
+  </node>
+  <node id="599655489" lat="42.6640947" lon="21.1584874">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Te Kaqa"/>
+  </node>
+  <node id="599655490" lat="42.6620473" lon="21.1630999">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Rings"/>
+  </node>
+  <node id="599655491" lat="42.6621510" lon="21.1599817">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Rings 2"/>
+  </node>
+  <node id="599655492" lat="42.6616534" lon="21.1597360">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Chinese Restaurant"/>
+  </node>
+  <node id="599655494" lat="42.6625904" lon="21.1601981">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Arte"/>
+  </node>
+  <node id="599655497" lat="42.6624949" lon="21.1612361">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Toto"/>
+  </node>
+  <node id="601574478" lat="42.6655992" lon="21.1616690">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Sultan's Pasticeria"/>
+  </node>
+  <node id="601574479" lat="42.6653285" lon="21.1601271">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Pasticeria Dafina"/>
+  </node>
+  <node id="601574480" lat="42.6620057" lon="21.1622410">
+    <tag k="amenity" v="pub"/>
+    <tag k="name" v="Zanzi Bar"/>
+  </node>
+  <node id="601574482" lat="42.6622347" lon="21.1632905">
+    <tag k="amenity" v="pub"/>
+    <tag k="name" v="Peper Mint Club"/>
+  </node>
+  <node id="601574485" lat="42.6604865" lon="21.1615764">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Bistro Bar Tema"/>
+  </node>
+  <node id="601574486" lat="42.6607465" lon="21.1615879">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Pasticeria&amp;Pizzeria Corza"/>
+  </node>
+  <node id="601574487" lat="42.6610117" lon="21.1619012">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Cafe Sheshi"/>
+  </node>
+  <node id="601574489" lat="42.6620119" lon="21.1614841">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Pasticeria Blue Eye"/>
+  </node>
+  <node id="601574502" lat="42.6605704" lon="21.1614417">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Corner"/>
+  </node>
+  <node id="603918443" lat="42.6604052" lon="21.1571407">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Baron Bar Lounge"/>
+  </node>
+  <node id="603918463" lat="42.6597947" lon="21.1623558">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Astoria caffe bar"/>
+  </node>
+  <node id="603918479" lat="42.6598460" lon="21.1622807">
+    <tag k="amenity" v="pub"/>
+    <tag k="name" v="Tarrace"/>
+  </node>
+  <node id="607231857" lat="42.6494580" lon="21.1627682">
+    <tag k="amenity" v="pub"/>
+    <tag k="name" v="Hollywood"/>
+  </node>
+  <node id="611022553" lat="42.6628577" lon="21.1628794">
+    <tag k="addr:street" v="Rr Fehmi Agani 3/8"/>
+    <tag k="amenity" v="restaurant"/>
+    <tag k="email" v="info@ex-ks.com"/>
+    <tag k="name" v="Ex"/>
+    <tag k="phone" v="044 157 039 / 044 557 700"/>
+    <tag k="website" v="www.ex-ks.com"/>
+  </node>
+  <node id="611129796" lat="42.6540834" lon="21.1509359">
+    <tag k="amenity" v="police"/>
+    <tag k="name" v="Stacioni Policor - Lakrishte"/>
+  </node>
+  <node id="612468765" lat="42.6578661" lon="21.1576576">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Bistro"/>
+  </node>
+  <node id="612468767" lat="42.6584170" lon="21.1568091">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Annex Bar Lounge"/>
+  </node>
+  <node id="612468782" lat="42.6578219" lon="21.1565868">
+    <tag k="addr:city" v="Prishtina"/>
+    <tag k="addr:housenumber" v="BL 4/1"/>
+    <tag k="addr:postcode" v="10000"/>
+    <tag k="addr:street" v="Mujo Ulqinaku"/>
+    <tag k="amenity" v="cafe"/>
+    <tag k="is_in:country" v="Kosovo"/>
+    <tag k="name" v="Filikaqa"/>
+  </node>
+  <node id="612468789" lat="42.6593554" lon="21.1576439">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Central Room cafe bar"/>
+  </node>
+  <node id="612468805" lat="42.6584876" lon="21.1571155">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Flirt Bar Lounge"/>
+  </node>
+  <node id="612468815" lat="42.6572486" lon="21.1571882">
+    <tag k="amenity" v="pub"/>
+    <tag k="name" v="Republica Bar lounge"/>
+  </node>
+  <node id="612468842" lat="42.6577054" lon="21.1571243">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Retro"/>
+  </node>
+  <node id="614913211" lat="42.6520811" lon="21.1534790">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Franch Bar Restaurant"/>
+  </node>
+  <node id="614913221" lat="42.6528067" lon="21.1530343">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Plato Bar Cafe"/>
+  </node>
+  <node id="614913222" lat="42.6517769" lon="21.1542898">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Orfeu"/>
+  </node>
+  <node id="614913228" lat="42.6520878" lon="21.1540967">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Melos"/>
+  </node>
+  <node id="614913230" lat="42.6539234" lon="21.1571809">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Hemingway"/>
+  </node>
+  <node id="617633617" lat="42.6672026" lon="21.1675935">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Pastiçeria Sultan"/>
+  </node>
+  <node id="619100453" lat="42.6617415" lon="21.1597606">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="MoKambo"/>
+  </node>
+  <node id="619100454" lat="42.6614056" lon="21.1596000">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Times Bar"/>
+  </node>
+  <node id="619100456" lat="42.6613839" lon="21.1596923">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Clickbar"/>
+  </node>
+  <node id="619100461" lat="42.6615602" lon="21.1596679">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="cuisine" v="italian"/>
+    <tag k="name" v="Pizzeria Panino"/>
+  </node>
+  <node id="619100462" lat="42.6612204" lon="21.1602494">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="cuisine" v="mexican"/>
+    <tag k="name" v="CaVallero"/>
+  </node>
+  <node id="619100464" lat="42.6613274" lon="21.1598466">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Capital"/>
+  </node>
+  <node id="619100466" lat="42.6631820" lon="21.1605021">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="cuisine" v="regional"/>
+    <tag k="name" v="Restaurant Pizzeria XIX"/>
+  </node>
+  <node id="620524374" lat="42.6646762" lon="21.1586341">
+    <tag k="amenity" v="pub"/>
+    <tag k="name" v="Sokoli e Mirusha"/>
+  </node>
+  <node id="624350733" lat="42.6580647" lon="21.1599108">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="CaffeZ"/>
+    <tag k="opening_hours" v="07:00 - 24:00"/>
+  </node>
+  <node id="632687608" lat="42.6471790" lon="21.1524091">
+    <tag k="amenity" v="university"/>
+    <tag k="name" v="UBT University of Business and Technology"/>
+    <tag k="name:sq" v="Universiteti për Biznes dhe Teknologji UBT"/>
+    <tag k="website" v="http://www.ubt-uni.net/"/>
+  </node>
+  <node id="643582981" lat="42.6607638" lon="21.1626224">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Te Shoki"/>
+  </node>
+  <node id="643584172" lat="42.6607243" lon="21.1627217">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="te Martini"/>
+  </node>
+  <node id="660142542" lat="42.6335420" lon="21.1486920">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Te Ariu"/>
+  </node>
+  <node id="660710980" lat="42.6300550" lon="21.1548647">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Gorenje"/>
+  </node>
+  <node id="661059102" lat="42.663511" lon="21.161983">
+    <tag k="amenity" v="pub"/>
+    <tag k="name" v="Maroon Pub"/>
+  </node>
+  <node id="661059925" lat="42.6616180" lon="21.1594570">
+    <tag k="amenity" v="pub"/>
+    <tag k="name" v="91-shi"/>
+  </node>
+  <node id="661063149" lat="42.6590776" lon="21.1575657">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Lounge i Vogel"/>
+  </node>
+  <node id="661063215" lat="42.6591730" lon="21.1576328">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Bamboo"/>
+  </node>
+  <node id="661070871" lat="42.6562770" lon="21.1569260">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Jazz Club 212"/>
+  </node>
+  <node id="661473940" lat="42.6553468" lon="21.1652980">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="A&amp;A"/>
+  </node>
+  <node id="664556924" lat="42.6622737" lon="21.1640792">
+    <tag k="alt_name" v="Irish Bar, Paddy O'Briens"/>
+    <tag k="amenity" v="pub"/>
+    <tag k="int_name" v="Paddy O'Briens"/>
+    <tag k="name" v="Irish Pub"/>
+  </node>
+  <node id="768276539" lat="42.6755942" lon="21.1638734">
+    <tag k="amenity" v="school"/>
+    <tag k="name" v="Shkolla e Mesme Asim Vokshi"/>
+  </node>
+  <node id="768276552" lat="42.6778816" lon="21.1675287">
+    <tag k="amenity" v="school"/>
+    <tag k="name" v="Shkolla Fillore Zenel Hajdini"/>
+  </node>
+  <node id="855157032" lat="42.6589040" lon="21.1647534">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Cafe Machiato"/>
+  </node>
+  <node id="921221159" lat="42.6618052" lon="21.1598364">
+    <tag k="alt_name" v="Amelie"/>
+    <tag k="amenity" v="cafe"/>
+    <tag k="cuisine" v="coffee_shop"/>
+    <tag k="name" v="Amelie - Luan Haradinaj"/>
+    <tag k="wifi" v="free"/>
+  </node>
+  <node id="921768821" lat="42.6585409" lon="21.1648335">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Ragno"/>
+    <tag k="phone" v="+381227670"/>
+  </node>
+  <node id="921768826" lat="42.6555193" lon="21.1642911">
+    <tag k="amenity" v="bar"/>
+    <tag k="description" v="Nice bar a calm place"/>
+    <tag k="name" v="Aktash"/>
+    <tag k="opening_hours" v="Mo-So 08:00-23:00"/>
+  </node>
+  <node id="921768839" lat="42.6546777" lon="21.1631213">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Symphony"/>
+    <tag k="phone" v="+37744501882"/>
+  </node>
+  <node id="921768867" lat="42.6449097" lon="21.1668334">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Brown Sushi bar and Restaurant"/>
+    <tag k="website" v="http://www.facebook.com/group.php?v=info&amp;ref=ts&amp;gid=99540086292"/>
+  </node>
+  <node id="921768871" lat="42.6551643" lon="21.1644629">
+    <tag k="amenity" v="bar"/>
+    <tag k="description" v="Good sandwichs and bar"/>
+    <tag k="name" v="Ura"/>
+  </node>
+  <node id="922397404" lat="42.6514389" lon="21.1659148">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Bruna"/>
+  </node>
+  <node id="924490377" lat="42.6550918" lon="21.1652090">
+    <tag k="amenity" v="bar"/>
+    <tag k="internet_access" v="no"/>
+    <tag k="name" v="Gjoni's Bar"/>
+    <tag k="smoking" v="dedicated"/>
+    <tag k="wheelchair" v="no"/>
+  </node>
+  <node id="928141597" lat="42.6534470" lon="21.1673860">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Pizzeria Napoli"/>
+  </node>
+  <node id="990432319" lat="42.6583815" lon="21.1600626">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Secret Restaurant"/>
+  </node>
+  <node id="996359801" lat="42.6669052" lon="21.1677296">
+    <tag k="amenity" v="school"/>
+    <tag k="name" v="Shkolla e Mesme Sami Frasheri"/>
+  </node>
+  <node id="996394742" lat="42.6594956" lon="21.1577412">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Troja"/>
+  </node>
+  <node id="1015911946" lat="42.6405428" lon="21.1006848">
+    <tag k="amenity" v="school"/>
+    <tag k="description" v="Shkolle fillore"/>
+    <tag k="name" v="Shkolle Fillore Mihal Grameno"/>
+  </node>
+  <node id="1016307792" lat="42.6710771" lon="21.1638950">
+    <tag k="amenity" v="school"/>
+    <tag k="name" v="Shkolla Fillore Emin Duraku"/>
+    <tag k="source" v="GPX file"/>
+  </node>
+  <node id="1028333484" lat="42.6550622" lon="21.1498964">
+    <tag k="amenity" v="school"/>
+    <tag k="name" v="Shkolla e Mesme Shtjefën Gjeçovi"/>
+  </node>
+  <node id="1029220798" lat="42.6483771" lon="21.1668653">
+    <tag k="amenity" v="university"/>
+    <tag k="name" v="Fakulteti i Inxhinierisë Elektrike dhe Kompjuterike"/>
+  </node>
+  <node id="1044636510" lat="42.6636557" lon="21.1607433">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Le Siam - Authentic Thai Cuisine"/>
+  </node>
+  <node id="1061601342" lat="42.6630388" lon="21.1607313">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Hamam Jazz Bar"/>
+  </node>
+  <node id="1132826402" lat="42.6616231" lon="21.1631238">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Firenze"/>
+  </node>
+  <node id="1132826440" lat="42.6573011" lon="21.1596714">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="name" v="Lounge Restaurant &amp; Pub"/>
+  </node>
+  <node id="1132826450" lat="42.6654417" lon="21.1600497">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="cuisine" v="Nepali"/>
+    <tag k="name" v="Himalayan Gorkha Restaurant"/>
+  </node>
+  <node id="1142813952" lat="42.6590388" lon="21.1575090">
+    <tag k="alt_name" v="Apartment 196"/>
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="The Apartment"/>
+  </node>
+  <node id="1190208557" lat="42.6588506" lon="21.1607484">
+    <tag k="amenity" v="pub"/>
+    <tag k="name" v="Gege"/>
+  </node>
+  <node id="1190208561" lat="42.6587940" lon="21.1595715">
+    <tag k="addr:street" v="Johan V. Hahn"/>
+    <tag k="amenity" v="pub"/>
+    <tag k="name" v="Churchill Pub"/>
+    <tag k="website" v="http://www.facebook.com/group.php?gid=78997968212&amp;v=info"/>
+  </node>
+  <node id="1190208565" lat="42.6589332" lon="21.1599132">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Tunnel"/>
+  </node>
+  <node id="1190208567" lat="42.6587129" lon="21.1599071">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Traffic Bar"/>
+  </node>
+  <node id="1190231290" lat="42.6572256" lon="21.1557009">
+    <tag k="addr:postcode" v="10000"/>
+    <tag k="addr:street" v="Mujo Ulqinaku, Pejton"/>
+    <tag k="amenity" v="cafe"/>
+    <tag k="cuisine" v="sandwich"/>
+    <tag k="name" v="Caesar"/>
+    <tag k="wifi" v="yes"/>
+  </node>
+  <node id="1190231301" lat="42.6578361" lon="21.1570660">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Amelie - Pejton"/>
+  </node>
+  <node id="1190231304" lat="42.6570362" lon="21.1547194">
+    <tag k="addr:postcode" v="10000"/>
+    <tag k="addr:street" v="Mujo Ulqinaku, Pejton"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Creme de la Creme"/>
+    <tag k="website" v="www.cremeprishtina.com"/>
+    <tag k="wifi" v="yes"/>
+  </node>
+  <node lat="42.659738" lon="21.1635693">
+    <tag k="amenity" v="university"/>
+    <tag k="name" v="Fakulteti Ekonomik"/>
+  </node>
+  <node lat="42.6598799" lon="21.1641004">
+    <tag k="amenity" v="university"/>
+    <tag k="name" v="Fakulteti Juridik"/>
+  </node>
+  <node lat="42.6596118" lon="21.1644115">
+    <tag k="amenity" v="university"/>
+    <tag k="name" v="Fakulteti i Edukimit"/>
+  </node>
+  <node id="1241365188" lat="42.6547812" lon="21.1562921">
+    <tag k="amenity" v="restaurant"/>
+    <tag k="cuisine" v="fish"/>
+    <tag k="name" v="Shark"/>
+  </node>
+  <node id="1309233007" lat="42.6554770" lon="21.1632835">
+    <tag k="amenity" v="university"/>
+    <tag k="name" v="Instituti i Historisë"/>
+    <tag k="wikipedia" v="http://sq.wikipedia.org/wiki/Instituti_i_Historis%C3%AB_-_Prishtin%C3%AB"/>
+  </node>
+  <node id="1317163822" lat="42.6645288" lon="21.1590281">
+    <tag k="amenity" v="pub"/>
+    <tag k="name" v="Soho Street Caffe"/>
+  </node>
+  <node id="1317163827" lat="42.6647944" lon="21.1582231">
+    <tag k="amenity" v="pub"/>
+    <tag k="name" v="Che Bar"/>
+  </node>
+  <node id="1388640755" lat="42.6601079" lon="21.1560987">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Prince Coffee House"/>
+  </node>
+  <node id="1393727470" lat="42.6635891" lon="21.1611512">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Amelie - Fehmi Agani"/>
+  </node>
+  <node id="1393727838" lat="42.6614512" lon="21.1585205">
+    <tag k="amenity" v="school"/>
+    <tag k="name" v="American School of Kosova"/>
+    <tag k="name2" v="ASK"/>
+  </node>
+  <node id="1487621098" lat="42.6585715" lon="21.1549527">
+    <tag k="addr:street" v="Pashko Vasa"/>
+    <tag k="amenity" v="restaurant"/>
+    <tag k="cuisine" v="international"/>
+    <tag k="name" v="Che Bar Bistro"/>
+    <tag k="source" v="Personal visit"/>
+  </node>
+  <node id="1586415905" lat="42.6552841" lon="21.1574570">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Hard Rockers Club"/>
+  </node>
+  <node id="1586415910" lat="42.6552155" lon="21.1575066">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Prishtina Rock Cafe"/>
+    <tag k="wifi" v="no"/>
+  </node>
+  <node id="1622893317" lat="42.6548531" lon="21.1561121">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Morena"/>
+  </node>
+  <node id="1622893322" lat="42.6549971" lon="21.1566941">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Legends"/>
+  </node>
+  <node id="1622893324" lat="42.6550228" lon="21.1567934">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="New Age"/>
+  </node>
+  <node id="1622893326" lat="42.6551470" lon="21.1567129">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Line"/>
+  </node>
+  <node id="1622908165" lat="42.6477808" lon="21.1600710">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Momento 2"/>
+  </node>
+  <node id="1622954899" lat="42.6481478" lon="21.1603366">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Moxart"/>
+  </node>
+  <node id="1622969083" lat="42.6566659" lon="21.1583893">
+    <tag k="amenity" v="cafe"/>
+    <tag k="name" v="Made KS"/>
+  </node>
+  <node id="1623020640" lat="42.6573307" lon="21.1579172">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Sharm Bar"/>
+  </node>
+  <node id="1699871536" lat="42.6651544" lon="21.1671890">
+    <tag k="amenity" v="courthouse"/>
+    <tag k="name" v="Gjykata Komunale Prishtinë"/>
+  </node>
+  <node id="1699871540" lat="42.6696142" lon="21.1660646">
+    <tag k="amenity" v="courthouse"/>
+    <tag k="name" v="Gjykata e Qarkut Prishtinë"/>
+  </node>
+  <node id="1699886296" lat="42.6642966" lon="21.1613064">
+    <tag k="amenity" v="hospital"/>
+    <tag k="name" v="Qendra Kryesore e Mjekësisë Familjare"/>
+  </node>
+  <node id="1699886326" lat="42.6675075" lon="21.1674253">
+    <tag k="amenity" v="hospital"/>
+    <tag k="name" v="Qendra e Mjekësisë Familjare Vneshta"/>
+  </node>
+  <node id="1699886331" lat="42.6705506" lon="21.1650470">
+    <tag k="amenity" v="hospital"/>
+    <tag k="name" v="Qendra e Mjekësisë Familjare Vranjecf"/>
+  </node>
+  <node id="1732887838" lat="42.6546333" lon="21.1473170">
+    <tag k="amenity" v="school"/>
+    <tag k="name" v="Shkolla e Mesme Xhevdet Doda"/>
+  </node>
+  <node id="1744604980" lat="42.6616271" lon="21.1603129">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Tingell Tangell"/>
+    <tag k="wifi" v="yes"/>
+  </node>
+  <node id="1744605989" lat="42.6616666" lon="21.1602325">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Derrasa e thyeme"/>
+  </node>
+  <node id="1744609044" lat="42.6619980" lon="21.1592855">
+    <tag k="amenity" v="police"/>
+    <tag k="name" v="Stacioni Kryesor i Policisë së Kosovës"/>
+  </node>
+  <node id="1764207362" lat="42.6632002" lon="21.1645107">
+    <tag k="amenity" v="theatre"/>
+    <tag k="name" v="Teatri Kombetare"/>
+  </node>
+  <node id="1764213742" lat="42.6617406" lon="21.1567918">
+    <tag k="amenity" v="theatre"/>
+    <tag k="name" v="Teatri Oda"/>
+  </node>
+  <node id="" lat="42.6645372" lon="21.1704652">
+    <tag k="amenity" v="theatre"/>
+    <tag k="name" v="Teatri i Kukullave Dodona"/>
+  </node>
+  <node id="1764238819" lat="42.6433791" lon="21.1608798">
+    <tag k="amenity" v="hospital"/>
+    <tag k="name" v="Qendra Klinike Universitare e Prishtines"/>
+  </node>
+  <node id="1764242860" lat="42.6526257" lon="21.1575312">
+    <tag k="amenity" v="hospital"/>
+    <tag k="emergency" v="yes"/>
+    <tag k="name" v="Qendra e Mjekësisë Familjare Dardani"/>
+  </node>
+  <node lat="42.6664152" lon="21.1645735">
+    <tag k="amenity" v="government"/>
+    <tag k="name" v="Kuvendi Komunal"/>
+</node>
+  <node lat="42.6650452" lon="21.1643668">
+    <tag k="amenity" v="government" />
+    <tag k="name" v="Parlamenti i Republikës së Kosovës" />
+</node>
+<node lat="42.6648164" lon="21.1646723">
+    <tag k="amenity" v="government"/>
+    <tag k="name" v="Zyra e Presidences"/>
+</node>
+<node lat="42.6644494" lon="21.1635303">
+    <tag k="amenity" v="government"/>
+    <tag k="name" v="Qeveria e Kosovës"/>
+</node>
+<node lat="42.6595144" lon="21.1560466">
+    <tag k="amenity" v="government"/>
+    <tag k="name" v="Ministria e Shërbimeve Publike"/>
+</node>
+<node lat="42.6593964" lon="21.165158">
+    <tag k="amenity" v="government"/>
+    <tag k="name" v="Ministria e Arsimit e Shkencës dhe e Teknologjisë"/>
+</node>
+<node lat="42.6596683" lon="21.1560839">
+    <tag k="amenity" v="government"/>
+    <tag k="name" v="Ministria e Drejtësisë"/>
+</node>
+<node lat="42.6631239" lon="21.1632245">
+    <tag k="amenity" v="government"/>
+    <tag k="name" v="Ministria e Zhvillimit Ekonomik "/>
+</node>
+<node lat="42.6642367" lon="21.1634332">
+    <tag k="amenity" v="government"/>
+    <tag k="name" v="Ministria e Financave"/>
+</node>
+<node lat="42.6473306" lon="21.1539607">
+    <tag k="amenity" v="government"/>
+    <tag k="name" v="Ministria e Forcës së Sigurisë"/>
+</node>
+<node lat="42.6592937" lon="21.1559756">
+    <tag k="amenity" v="government"/>
+    <tag k="name" v="Ministria e Administrimit të Pushtetit Lokal"/>
+</node>
+  <node id="1699683859" lat="42.664193" lon="21.1604008">
+  <tag k="name" v="Ministria e Punëve të Brendshme "/>
+  <tag k="amenity" v="government"/>
+</node>
+<node id="1421019831" lat="42.6647236" lon="21.1634063">
+    <tag k="name" v="Ministria e Punëve të Jashtme"/>
+    <tag k="amenity" v="government"/>
+</node>
+<node id="1694742364" lat="42.665328" lon="21.158695">
+  <tag k="name" v="Ministria e Punës dhe Mirëqenies Sociale "/>
+  <tag k="amenity" v="government"/>
+</node>
+  <node id="1699688321" lat="42.6384327" lon="21.0870928">
+  <tag k="amenity" v="government"/>
+  <tag k="name" v="Ministria për Komunitete dhe Kthim "/>
+</node>
+<node id="1421032344" lat="42.6615525" lon="21.1626124">
+  <tag k="amenity" v="government"/>
+  <tag k="name" v="Ministria e Kulturës, Rinisë dhe Sportit"/>
+</node>
+<node id="1421106567" lat="42.6653587" lon="21.164608">
+  <tag k="name" v="Ministria e Infrastrukturës"/>
+  <tag k="amenity" v="government"/>
+</node>
+<node id="1421041089" lat="42.6612684" lon="21.1623174">
+  <tag k="name" v="Ministria e Bujqësisë Pylltarisë dhe Zhvillimit Rural"/>
+  <tag k="amenity" v="government"/>
+</node>
+  <node id="1699698749" lat="42.6477836" lon="21.1654181">
+  <tag k="name" v="Ministria e Tregtisë dhe Industrisë "/>
+  <tag k="amenity" v="government"/>
+</node>
+  <node id="1699708840" lat="42.6644468" lon="21.1633218">
+  <tag k="name" v="Ministria e Mjedisit dhe Planifikimit Hapësinor"/>
+  <tag k="amenity" v="government"/>
+</node>
+<node id="1421099333" lat="42.664633" lon="21.1636961">
+  <tag k="name" v="Ministria e Integrimit Europian"/>
+  <tag k="amenity" v="government"/>
+</node>
+<node id="1421088614" lat="42.6672128" lon="21.1563391">
+  <tag k="name" v="Ministria e Shëndetësisë"/>
+  <tag k="amenity" v="government"/>
+  <tag k="website" v="www.msh-ks.org"/>
+</node>
+<node id="608479946" lat="42.6514046" lon="21.1576308">
+  <tag k="amenity" v="public_companies"/>
+  <tag k="name" v="Posta dhe Telekomunikacioni i Kosoves"/>
+</node>
+<node id="1699800837" lat="42.6552201" lon="21.1583899">
+  <tag k="amenity" v="public_companies"/>
+  <tag k="name" v="Korporata Energjetike e Kosoves KEK"/>
+</node>
+<node id="1280370320" lat="42.6425926" lon="21.140052">
+  <tag k="amenity" v="public_companies"/>
+  <tag k="name" v="Ujësjellësi Batllava"/>
+</node>
+<node id="611109605" lat="42.6477322" lon="21.1561492">
+  <tag k="amenity" v="public_companies"/>
+  <tag k="name" v="Termokos"/>
+</node>
+<node id="448710970" lat="42.6344875" lon="21.0809207">
+  <tag k="amenity" v="public_companies"/>
+  <tag k="name" v="Hekurudhat e Kosovës"/>
+</node>
+<node id="1699831604" lat="42.6493742" lon="21.1587887">
+  <tag k="amenity" v="public_companies"/>
+  <tag k="name" v="Kompania për Menaxhimin e Deponive"/>
+</node>
+<node id="1699833790" lat="42.6579244" lon="21.1611399">
+  <tag k="amenity" v="public_companies"/>
+  <tag k="name" v="Radio Televizioni i Kosovës"/>
+</node>
+<node id="828567705" lat="42.6581774" lon="21.1558669">
+  <tag k="amenity" v="independent_agencies"/>
+  <tag k="name" v="Autoriteti Rregullativ i Telekomunikacionit"/>
+</node>
+<node id="1699714336" lat="42.6573981" lon="21.166288">
+  <tag k="amenity" v="independent_agencies"/>
+  <tag k="name" v="Komisioni i Pavarur për Media"/>
+</node>
+<node id="1699791521" lat="42.6470885" lon="21.1814358">
+  <tag k="amenity" v="independent_agencies"/>
+  <tag k="name" v="Instituti Gjyqësor i Kosovës"/>
+</node>
+<node id="1699718120" lat="42.6672339" lon="21.1736348">
+  <tag k="name" v="Agjencia Kosovare Kundër Korrupsionit"/>
+  <tag k="amenity" v="independent_agencies"/>
+</node>
+<node id="1764255708" lat="42.6599776" lon="21.1652151">
+  <tag k="name" v="Akademia e Shkencave Dhe e Arteve"/>
+  <tag k="amenity" v="independent_agencies"/>
+</node>
+<node id="1699722141" lat="42.6705106" lon="21.1621605">
+  <tag k="amenity" v="independent_agencies"/>
+  <tag k="name" v="Agjencia Kosovare e Privatizimit"/>
+</node>
+<node id="587639811" lat="42.660175" lon="21.1578162">
+  <tag k="amenity" v="independent_agencies"/>
+  <tag k="name" v="Agjencia Kosovare e Pronës"/>
+  <tag k="int_name" v="Kosovo Property Agency"/>
+</node>
+<node id="1699732566" lat="42.6545694" lon="21.1636576">
+  <tag k="name" v="Institucioni i Avokatit të Popullit"/>
+  <tag k="amenity" v="independent_agencies"/>
+</node>
+<node id="1699730116" lat="42.6643335" lon="21.1603632">
+  <tag k="name" v="Komisioni Qendror i Zgjedhjeve"/>
+  <tag k="amenity" v="independent_agencies"/>
+</node>
+<node id="1699739173" lat="42.6572118" lon="21.1584423">
+  <tag k="name" v="Autoriteti i Aviacionit Civil"/>
+  <tag k="amenity" v="independent_agencies"/>
+</node>
+<node id="1699791528" lat="42.6550043" lon="21.1730978">
+  <tag k="amenity" v="independent_agencies"/>
+  <tag k="name" v="Komisioni i Pavarur për Miniera dhe Minerale"/>
+</node>
+<node id="1699743434" lat="42.6604648" lon="21.1541139">
+  <tag k="name" v="Organi Shqyrtues i Prokurimit"/>
+  <tag k="amenity" v="independent_agencies"/>
+</node>
+<node id="1699749618" lat="42.6551906" lon="21.1706471">
+  <tag k="name" v="Zyra e Rregullatorit për Ujësjellës dhe Mbeturina"/>
+  <tag k="amenity" v="independent_agencies"/>
+</node>
+<node id="1699758869" lat="42.6641975" lon="21.1602118">
+  <tag k="amenity" v="independent_agencies"/>
+  <tag k="name" v="Paneli Zgjedhor për Ankesa dhe Parashtresa"/>
+</node>
+<node id="1699757179" lat="42.6575373" lon="21.1642273">
+  <tag k="amenity" v="independent_agencies"/>
+  <tag k="name" v="Trusti i Kursimeve Pensionale"/>
+</node>
+<node id="1215709044" lat="42.6556753" lon="21.1623577">
+  <tag k="amenity" v="independent_agencies"/>
+  <tag k="name" v="Instituti Albanologjik"/>
+</node>
+<node id="524264450" lat="42.6664148" lon="21.1622890">
+    <tag k="amenity" v="library"/>
+    <tag k="name" v="Biblioteka Ndërkomunale Hivzi Sylejmani"/>
+    <tag k="name2" v="Municipal Library Hivzi Sylejmani"/>
+  </node>
+  <node id="922410785" lat="42.6532609" lon="21.1655194">
+    <tag k="amenity" v="library"/>
+    <tag k="name" v="Reading Room - Konvikti nr 6"/>
+  </node>
+  <node id="1764279639" lat="42.6574853" lon="21.1623271">
+    <tag k="amenity" v="library"/>
+    <tag k="name" v="Bibloteka Kombetare"/>
+  </node>
+</osm>
